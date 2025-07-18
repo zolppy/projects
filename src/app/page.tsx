@@ -1,5 +1,11 @@
+import { Header } from "@/app/components/Header";
+
 export default function Home() {
-  return <h1 className="text-2xl">Hi</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 Home.displayName = "Home";
