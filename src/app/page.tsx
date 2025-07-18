@@ -25,14 +25,19 @@ export default function Home() {
             </SectionSubtitle>
             <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 mt-8">
               <TagList className="justify-center gap-3">
-                <Tag>Skill 1</Tag>
-                <Tag className="bg-purple-100 text-purple-800">Skill 2</Tag>
-                <Tag className="bg-amber-100 text-amber-800">Skill 3</Tag>
-                <Tag className="bg-emerald-100 text-emerald-800">Skill 4</Tag>
-                <Tag className="bg-rose-100 text-rose-800">Skill 5</Tag>
-                <Tag className="bg-indigo-100 text-indigo-800">Skill 6</Tag>
-                <Tag className="bg-cyan-100 text-cyan-800">Skill 7</Tag>
-                <Tag className="bg-lime-100 text-lime-800">Skill 8</Tag>
+                <Tag className="bg-purple-100 text-purple-800">React.js</Tag>
+                <Tag className="bg-amber-100 text-amber-800">Next.js</Tag>
+                <Tag className="bg-emerald-100 text-emerald-800">
+                  Tailwind CSS
+                </Tag>
+                <Tag className="bg-rose-100 text-rose-800">Docker</Tag>
+                <Tag className="bg-indigo-100 text-indigo-800">TypeScript</Tag>
+                <Tag className="bg-cyan-100 text-cyan-800">Framer Motion</Tag>
+                <Tag className="bg-red-100 text-red-800">React Icons</Tag>
+                <Tag className="bg-blue-100 text-blue-800">RTL</Tag>
+                <Tag className="bg-green-100 text-green-800">
+                  React Hook Form
+                </Tag>
               </TagList>
             </div>
           </div>
@@ -43,7 +48,7 @@ export default function Home() {
               Featured <span className="text-[#7c3aed]">Projects</span>
             </SectionTitle>
             <SectionSubtitle>
-              Below you'll find my most significant web development projects.
+              Below you will find my most significant web development projects.
               Click on any project to learn more.
             </SectionSubtitle>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
