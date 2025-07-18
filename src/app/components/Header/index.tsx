@@ -3,12 +3,12 @@ import { montserrat } from "@/utils/fonts";
 
 export function Header() {
   return (
-    <header
-      className={`${montserrat.className} bg-gradient-to-r from-[#2563eb] to-[#7c3aed] text-white py-6`}
-    >
+    <header className="bg-gradient-to-r from-[#2563eb] to-[#7c3aed] text-white py-6">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0">
-          <h1 className="text-3xl md:text-4xl font-heading font-bold">
+          <h1
+            className={`${montserrat.className} text-3xl md:text-4xl font-bold`}
+          >
             Project Showcase
           </h1>
           <p className="mt-2 opacity-90">
