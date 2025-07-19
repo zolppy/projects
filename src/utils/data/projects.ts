@@ -7,6 +7,7 @@ import interiorDesign from "../../../public/interior-design.jpg";
 import pizza from "../../../public/thin-crust-pizza.jpg";
 import travel from "../../../public/travel-agency.jpg";
 import wizard from "../../../public/wizard-register.jpg";
+import project from "../../../public/project-showcase.jpg";
 
 const architechtureImg: Img = {
   path: architecture,
@@ -40,6 +41,12 @@ const travelImg: Img = {
 
 const wizardImg: Img = {
   path: wizard,
+  title: "",
+  alt: "",
+};
+
+const projectShowcaseImg: Img = {
+  path: project,
   title: "",
   alt: "",
 };
@@ -306,6 +313,47 @@ const projects: Project[] = [
     ],
     repoLink: "https://github.com/zolppy/wizard-register",
     demoLink: "https://wizard-register.vercel.app/",
+  },
+  {
+    id: uuid(),
+    img: projectShowcaseImg,
+    title: "Project Showcase",
+    description:
+      "Gabriel Cavalcante's main web projects, which are modern, fluid, accessible, dynamic, performant and responsive user interfaces, and built by using cutting-edge technologies.",
+    stacks: [
+      {
+        id: uuid(),
+        title: "Frontend",
+      },
+    ],
+    skills: [
+      {
+        id: uuid(),
+        title: "React.js",
+      },
+      {
+        id: uuid(),
+        title: "Next.js",
+      },
+      {
+        id: uuid(),
+        title: "Tailwind CSS",
+      },
+      {
+        id: uuid(),
+        title: "Docker",
+      },
+      {
+        id: uuid(),
+        title: "TypeScript",
+      },
+      {
+        id: uuid(),
+        title: "React Icons",
+      },
+    ],
+    repoLink: "https://github.com/zolppy/projects",
+    demoLink: "https://projects-zol.vercel.app",
   },
 ];
 

@@ -4,7 +4,8 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Project Showcase",
-  description: "Gabriel Cavalcante's main web projects.",
+  description:
+    "Gabriel Cavalcante's main web projects, which are modern, fluid, accessible, dynamic, performant and responsive user interfaces, and built by using cutting-edge technologies.",
   authors: [
     {
       name: "Gabriel Cavalcante de Jesus Oliveira",
