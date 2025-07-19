@@ -231,7 +231,7 @@ const projects: Project[] = [
   {
     id: uuid(),
     img: travelImg,
-    title: "E-Commerce Dashboard",
+    title: "Travel Agency",
     description:
       "Discover your next adventure with Travel Agency - explore top destinations, customized vacation packages, and hassle-free booking. Plan your dream trip today!",
     stacks: [
