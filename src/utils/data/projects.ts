@@ -170,7 +170,7 @@ const projects: Project[] = [
       },
       {
         id: uuid(),
-        title: "RTL",
+        title: "React Testing Library",
       },
     ],
     repoLink: "https://github.com/zolppy/interior-design",
@@ -297,7 +297,7 @@ const projects: Project[] = [
       },
       {
         id: uuid(),
-        title: "RTL",
+        title: "React Testing Library",
       },
       {
         id: uuid(),

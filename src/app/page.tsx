@@ -34,8 +34,10 @@ export default function Home() {
                 <Tag className="bg-indigo-100 text-indigo-800">TypeScript</Tag>
                 <Tag className="bg-cyan-100 text-cyan-800">Framer Motion</Tag>
                 <Tag className="bg-red-100 text-red-800">React Icons</Tag>
-                <Tag className="bg-blue-100 text-blue-800">RTL</Tag>
-                <Tag className="bg-green-100 text-green-800">
+                <Tag className="bg-lime-100 text-lime-800">
+                  React Testing Library
+                </Tag>
+                <Tag className="bg-fuchsia-100 text-fuchsia-800">
                   React Hook Form
                 </Tag>
               </TagList>
