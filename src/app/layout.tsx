@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { poppins } from "@/utils/fonts";
 import "@/app/globals.css";
 
@@ -22,6 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>{children}</body>
+      <GoogleAnalytics gaId="G-3BM75W7M1F" />
     </html>
   );
 }
+
+RootLayout.displayName="RootLayout";
