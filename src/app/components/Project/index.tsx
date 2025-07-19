@@ -16,7 +16,7 @@ export function Project({
   demoLink,
 }: Omit<ProjectType, "id">) {
   return (
-    <div className="bg-gradient-to-br from-white to-slate-50 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 group">
+    <div className="bg-gradient-to-br from-white to-slate-50 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1 group">
       <div className="h-48 overflow-hidden">
         <Image
           src={img.path}
