@@ -6,9 +6,35 @@ import { Tag } from "@/app/components/Tag";
 import { Project } from "@/app/components/Project";
 import { Footer } from "@/app/components/Footer";
 import { projects } from "@/utils/data/projects";
+import {
+  dockerTag,
+  framerMotionTag,
+  nextTag,
+  reactHookFormTag,
+  reactIconsTag,
+  reactTag,
+  reactTestingLibraryTag,
+  tailwindTag,
+  typescriptTag,
+} from "@/utils/data/tags";
 import { Project as ProjectType } from "@/utils/types/project";
+import { Tag as TagType } from "@/utils/types/tag";
+import { TailwindColor } from "@/utils/enums/tailwindColor";
+import { getTagColorClasses } from "@/utils/helpers/getTagColorClasses";
 
 export default function Home() {
+  const tags = [
+    dockerTag,
+    framerMotionTag,
+    nextTag,
+    reactHookFormTag,
+    reactIconsTag,
+    reactTag,
+    reactTestingLibraryTag,
+    tailwindTag,
+    typescriptTag,
+  ];
+
   return (
     <>
       <Header />
@@ -25,21 +51,11 @@ export default function Home() {
             </SectionSubtitle>
             <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 mt-8">
               <TagList className="justify-center gap-3">
-                <Tag className="bg-purple-100 text-purple-800">React.js</Tag>
-                <Tag className="bg-amber-100 text-amber-800">Next.js</Tag>
-                <Tag className="bg-emerald-100 text-emerald-800">
-                  Tailwind CSS
-                </Tag>
-                <Tag className="bg-rose-100 text-rose-800">Docker</Tag>
-                <Tag className="bg-indigo-100 text-indigo-800">TypeScript</Tag>
-                <Tag className="bg-cyan-100 text-cyan-800">Framer Motion</Tag>
-                <Tag className="bg-red-100 text-red-800">React Icons</Tag>
-                <Tag className="bg-lime-100 text-lime-800">
-                  React Testing Library
-                </Tag>
-                <Tag className="bg-fuchsia-100 text-fuchsia-800">
-                  React Hook Form
-                </Tag>
+                {tags.map(({ id, title, color }: TagType) => (
+                  <Tag key={id} className={getTagColorClasses(color)}>
+                    {title}
+                  </Tag>
+                ))}
               </TagList>
             </div>
           </div>

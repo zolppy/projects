@@ -5,6 +5,7 @@ import { TagList } from "@/app/components/TagList";
 import { Tag } from "@/app/components/Tag";
 import type { Project as ProjectType } from "@/utils/types/project";
 import { Tag as TagType } from "@/utils/types/tag";
+import { getTagColorClasses } from "@/utils/helpers/getTagColorClasses";
 
 export function Project({
   img,
@@ -32,16 +33,20 @@ export function Project({
           <div className="flex flex-col gap-y-1">
             <h4 className="text-sm font-bold">Stacks</h4>
             <TagList>
-              {stacks.map(({ id, title }: TagType) => (
-                <Tag key={id}>{title}</Tag>
+              {stacks.map(({ id, title, color }: TagType) => (
+                <Tag key={id} className={getTagColorClasses(color)}>
+                  {title}
+                </Tag>
               ))}
             </TagList>
           </div>
           <div className="flex flex-col gap-y-1">
             <h4 className="text-sm font-bold">Skills</h4>
             <TagList>
-              {skills.map(({ id, title }: TagType) => (
-                <Tag key={id}>{title}</Tag>
+              {skills.map(({ id, title, color }: TagType) => (
+                <Tag key={id} className={getTagColorClasses(color)}>
+                  {title}
+                </Tag>
               ))}
             </TagList>
           </div>

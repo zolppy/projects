@@ -1,0 +1,28 @@
+enum TailwindColor {
+  Amber = "amber",
+  Black = "black",
+  Blue = "blue",
+  Cyan = "cyan",
+  Emerald = "emerald",
+  Fuchsia = "fuchsia",
+  Gray = "gray",
+  Green = "green",
+  Indigo = "indigo",
+  Lime = "lime",
+  Neutral = "neutral",
+  Orange = "orange",
+  Pink = "pink",
+  Purple = "purple",
+  Red = "red",
+  Rose = "rose",
+  Sky = "sky",
+  Slate = "slate",
+  Stone = "stone",
+  Teal = "teal",
+  Violet = "violet",
+  White = "white",
+  Yellow = "yellow",
+  Zinc = "zinc",
+}
+
+export { TailwindColor };

@@ -6,11 +6,10 @@ interface TagProps extends HTMLAttributes<HTMLLIElement> {
 }
 
 export function Tag({ children, className = "" }: TagProps) {
-  const defaultStyles =
-    "px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800";
+  const defaultStyle = "px-2 py-1 rounded-full text-xs font-medium";
 
   return (
-    <li className={twMerge(defaultStyles, className as ClassNameValue)}>
+    <li className={twMerge(defaultStyle, className as ClassNameValue)}>
       {children}
     </li>
   );
