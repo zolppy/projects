@@ -7,7 +7,7 @@ export function Header() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0">
           <h1
-            className={`${montserrat.className} text-3xl md:text-4xl font-bold`}
+            className={`${montserrat.className} text-3xl md:text-4xl font-bold text-center md:text-start`}
           >
             Project Showcase
           </h1>

@@ -7,7 +7,9 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className={`${montserrat.className} text-2xl font-bold`}>
+            <h3
+              className={`${montserrat.className} text-2xl font-bold text-center md:text-start`}
+            >
               Project Showcase
             </h3>
             <p className="mt-2 text-gray-400">
