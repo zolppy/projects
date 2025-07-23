@@ -1,9 +1,8 @@
-import { TailwindColor } from "@/utils/enums/tailwindColor";
-
 interface Tag {
   id: string;
   title: string;
-  color: TailwindColor;
+  bgColor: string;
+  txtColor: string;
 }
 
 export type { Tag };

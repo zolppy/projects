@@ -1,7 +1,7 @@
 import { v4 as uuid } from "uuid";
 import { Project } from "@/utils/types/project";
 import * as images from "@/utils/data/images";
-import * as tags from "@/utils/data/tags";
+import { tags } from "@/utils/data/tags";
 
 const projects: Project[] = [
   {
