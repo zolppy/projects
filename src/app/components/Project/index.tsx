@@ -10,13 +10,13 @@ export function Project({
   img,
   title,
   description,
-  stacks,
+  areas,
   skills,
   repoLink,
-  demoLink,
+  demoLink = "",
 }: Omit<ProjectType, "id">) {
   return (
-    <div className="bg-gradient-to-br from-white to-slate-50 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1 group">
+    <div className="bg-gradient-to-br from-white to-slate-50 shadow-xl rounded-2xl overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1 group flex flex-col">
       <div className="h-48 overflow-hidden">
         <Image
           src={img.path}
@@ -25,15 +25,15 @@ export function Project({
           className="w-full h-full object-cover group-hover:scale-[1.03] lg:hover:transition-[transform_0.5s_ease]"
         />
       </div>
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-bold text-[#0f172a]">{title}</h3>
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 flex-1">
           <p className="text-gray-600">{description}</p>
           <div className="flex flex-col gap-y-1">
-            <h4 className="text-sm font-bold">Stacks</h4>
+            <h4 className="text-sm font-bold">Areas</h4>
             <TagList>
               <TagList>
-                {Object.values(stacks).map(
+                {Object.values(areas).map(
                   ({ id, title, bgColor, txtColor }: TagType) => (
                     <Tag key={id} className={`${bgColor} ${txtColor}`}>
                       {title}
@@ -44,7 +44,7 @@ export function Project({
             </TagList>
           </div>
           <div className="flex flex-col gap-y-1">
-            <h4 className="text-sm font-bold">Skills</h4>
+            <h4 className="text-sm font-bold">Hard Skills</h4>
             <TagList>
               <TagList>
                 {Object.values(skills).map(
@@ -66,13 +66,15 @@ export function Project({
           >
             <FaGithub /> Code
           </a>
-          <a
-            href={demoLink}
-            target="_blank"
-            className="px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 bg-white text-[#2563eb] border border-[#2563eb] hover:bg-blue-50"
-          >
-            <FaExternalLinkAlt /> Demo
-          </a>
+          {demoLink && (
+            <a
+              href={demoLink}
+              target="_blank"
+              className="px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 bg-white text-[#2563eb] border border-[#2563eb] hover:bg-blue-50"
+            >
+              <FaExternalLinkAlt /> Live
+            </a>
+          )}
         </div>
       </div>
     </div>

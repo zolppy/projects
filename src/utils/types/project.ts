@@ -6,10 +6,10 @@ interface Project {
   img: Img;
   title: string;
   description: string;
-  stacks: Tag[];
+  areas: Tag[];
   skills: Tag[];
   repoLink: string;
-  demoLink: string;
+  demoLink?: string;
 }
 
 export type { Project };

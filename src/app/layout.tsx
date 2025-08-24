@@ -6,7 +6,7 @@ import "@/app/globals.css";
 export const metadata: Metadata = {
   title: "Project Showcase",
   description:
-    "Gabriel Cavalcante's main web projects, which are modern, fluid, accessible, dynamic, performant and responsive user interfaces, and built by using cutting-edge technologies.",
+    "Gabriel Cavalcante's main side projects, developed by using cutting-edge technologies, good software achitecures and good coding practices.",
   authors: [
     {
       name: "Gabriel Cavalcante de Jesus Oliveira",
@@ -28,4 +28,4 @@ export default function RootLayout({
   );
 }
 
-RootLayout.displayName="RootLayout";
+RootLayout.displayName = "RootLayout";

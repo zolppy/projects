@@ -54,7 +54,7 @@ export default function Home() {
                   img,
                   title,
                   description,
-                  stacks,
+                  areas,
                   skills,
                   repoLink,
                   demoLink,
@@ -64,7 +64,7 @@ export default function Home() {
                     img={img}
                     title={title}
                     description={description}
-                    stacks={stacks}
+                    areas={areas}
                     skills={skills}
                     repoLink={repoLink}
                     demoLink={demoLink}

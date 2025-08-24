@@ -20,12 +20,6 @@ const githubTag: Tag = {
   bgColor: "bg-gray-100",
   txtColor: "text-gray-800",
 };
-const scrumTag: Tag = {
-  id: uuid(),
-  title: "Scrum",
-  bgColor: "bg-emerald-100",
-  txtColor: "text-emerald-800",
-};
 
 /* Front-end */
 const cssTag: Tag = {
@@ -113,138 +107,66 @@ const useFormTag: Tag = {
   txtColor: "text-violet-800",
 };
 
-/* Machine Learning */
+/* Artificial Intelligence */
 const artificialIntelligenceTag: Tag = {
   id: uuid(),
   title: "Artificial Inteligence",
-  bgColor: "bg-green-100",
-  txtColor: "text-green-800",
-};
-const computerVisionTag: Tag = {
-  id: uuid(),
-  title: "Computer Vision",
-  bgColor: "bg-blue-100",
-  txtColor: "text-blue-800",
-};
-const convolutionalNetworksTag: Tag = {
-  id: uuid(),
-  title: "Convolutional Networks",
-  bgColor: "bg-purple-100",
-  txtColor: "text-purple-800",
-};
-const deepLearningTag: Tag = {
-  id: uuid(),
-  title: "Deep Learning",
-  bgColor: "bg-red-100",
-  txtColor: "text-red-800",
-};
-const hyperparameterTunningTag: Tag = {
-  id: uuid(),
-  title: "Hyperparameter Tuning",
-  bgColor: "bg-yellow-100",
-  txtColor: "text-yellow-800",
-};
-const imageProcessingTag: Tag = {
-  id: uuid(),
-  title: "Image Processing",
-  bgColor: "bg-indigo-100",
-  txtColor: "text-indigo-800",
-};
-const kaggleTag: Tag = {
-  id: uuid(),
-  title: "Kaggle",
-  bgColor: "bg-pink-100",
-  txtColor: "text-pink-800",
-};
-const kerasTag: Tag = {
-  id: uuid(),
-  title: "Keras",
-  bgColor: "bg-teal-100",
-  txtColor: "text-teal-800",
-};
-const machineLearningTag: Tag = {
-  id: uuid(),
-  title: "Machine Learning",
-  bgColor: "bg-orange-100",
-  txtColor: "text-orange-800",
-};
-const modelEvaluationTag: Tag = {
-  id: uuid(),
-  title: "Model Evaluation",
-  bgColor: "bg-cyan-100",
-  txtColor: "text-cyan-800",
-};
-const naturalLanguageProcessingTag: Tag = {
-  id: uuid(),
-  title: "Natural Language Processing",
-  bgColor: "bg-lime-100",
-  txtColor: "text-lime-800",
-};
-const neuralNetworksTag: Tag = {
-  id: uuid(),
-  title: "Neural Networks",
-  bgColor: "bg-amber-100",
-  txtColor: "text-amber-800",
-};
-const objectClassificationTag: Tag = {
-  id: uuid(),
-  title: "Object Classification",
   bgColor: "bg-emerald-100",
   txtColor: "text-emerald-800",
 };
-const objectIdentificationTag: Tag = {
+const kagglehubTag: Tag = {
   id: uuid(),
-  title: "Object Identification",
-  bgColor: "bg-violet-100",
-  txtColor: "text-violet-800",
+  title: "Kagglehub",
+  bgColor: "bg-amber-100",
+  txtColor: "text-amber-800",
 };
-const objectSegmentationTag: Tag = {
+const matplotlibTag: Tag = {
   id: uuid(),
-  title: "Object Segmentation",
-  bgColor: "bg-fuchsia-100",
-  txtColor: "text-fuchsia-800",
+  title: "Matplotlib",
+  bgColor: "bg-orange-100",
+  txtColor: "text-orange-800",
+};
+const numpyTag: Tag = {
+  id: uuid(),
+  title: "Numpy",
+  bgColor: "bg-blue-100",
+  txtColor: "text-blue-800",
 };
 const openCvTag: Tag = {
   id: uuid(),
   title: "OpenCV",
-  bgColor: "bg-rose-100",
-  txtColor: "text-rose-800",
+  bgColor: "bg-green-100",
+  txtColor: "text-green-800",
 };
-const promptEngineeringTag: Tag = {
+const pandasTag: Tag = {
   id: uuid(),
-  title: "Prompt Engineering",
-  bgColor: "bg-sky-100",
-  txtColor: "text-sky-800",
+  title: "Pandas",
+  bgColor: "bg-red-100",
+  txtColor: "text-red-800",
+};
+const pillowTag: Tag = {
+  id: uuid(),
+  title: "Pillow",
+  bgColor: "bg-purple-100",
+  txtColor: "text-purple-800",
 };
 const pythonTag: Tag = {
   id: uuid(),
   title: "Python",
-  bgColor: "bg-amber-100",
-  txtColor: "text-amber-800",
-};
-const retrievalAugmentedGenerationTag: Tag = {
-  id: uuid(),
-  title: "Retrieval Augmented Generation",
-  bgColor: "bg-indigo-100",
-  txtColor: "text-indigo-800",
+  bgColor: "bg-yellow-100",
+  txtColor: "text-yellow-800",
 };
 const scikitLearnTag: Tag = {
   id: uuid(),
-  title: "Scikit-Learn",
-  bgColor: "bg-orange-100",
-  txtColor: "text-orange-800",
+  title: "ScikitLearn",
+  bgColor: "bg-sky-100",
+  txtColor: "text-sky-800",
 };
 const tensorFlowTag: Tag = {
   id: uuid(),
   title: "TensorFlow",
-  bgColor: "bg-red-100",
-  txtColor: "text-red-800",
-};
-const transferLearningTag: Tag = {
-  id: uuid(),
-  title: "Transfer Learning",
-  bgColor: "bg-green-100",
-  txtColor: "text-green-800",
+  bgColor: "bg-rose-100",
+  txtColor: "text-rose-800",
 };
 
 const tags = {
@@ -252,7 +174,6 @@ const tags = {
   dockerTag,
   gitTag,
   githubTag,
-  scrumTag,
 
   // Front-end
   cssTag,
@@ -270,29 +191,17 @@ const tags = {
   typeScriptTag,
   useFormTag,
 
-  // Machine Learning
+  // Artificial Intelligence
   artificialIntelligenceTag,
-  computerVisionTag,
-  convolutionalNetworksTag,
-  deepLearningTag,
-  hyperparameterTunningTag,
-  imageProcessingTag,
-  kaggleTag,
-  kerasTag,
-  machineLearningTag,
-  modelEvaluationTag,
-  naturalLanguageProcessingTag,
-  neuralNetworksTag,
-  objectClassificationTag,
-  objectIdentificationTag,
-  objectSegmentationTag,
+  kagglehubTag,
+  matplotlibTag,
+  numpyTag,
   openCvTag,
-  promptEngineeringTag,
+  pandasTag,
+  pillowTag,
   pythonTag,
-  retrievalAugmentedGenerationTag,
   scikitLearnTag,
   tensorFlowTag,
-  transferLearningTag,
 };
 
 export { tags };
