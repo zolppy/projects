@@ -114,11 +114,23 @@ const artificialIntelligenceTag: Tag = {
   bgColor: "bg-emerald-100",
   txtColor: "text-emerald-800",
 };
+const chromaDbTag: Tag = {
+  id: uuid(),
+  title: "ChromaDB",
+  bgColor: "bg-red-100",
+  txtColor: "text-red-800",
+};
 const kagglehubTag: Tag = {
   id: uuid(),
   title: "Kagglehub",
   bgColor: "bg-amber-100",
   txtColor: "text-amber-800",
+};
+const langchainTag: Tag = {
+  id: uuid(),
+  title: "LangChain",
+  bgColor: "bg-blue-100",
+  txtColor: "text-blue-800",
 };
 const matplotlibTag: Tag = {
   id: uuid(),
@@ -162,6 +174,12 @@ const scikitLearnTag: Tag = {
   bgColor: "bg-sky-100",
   txtColor: "text-sky-800",
 };
+const streamlitTag: Tag = {
+  id: uuid(),
+  title: "Streamlit",
+  bgColor: "bg-green-100",
+  txtColor: "text-green-800",
+};
 const tensorFlowTag: Tag = {
   id: uuid(),
   title: "TensorFlow",
@@ -193,7 +211,9 @@ const tags = {
 
   // Artificial Intelligence
   artificialIntelligenceTag,
+  chromaDbTag,
   kagglehubTag,
+  langchainTag,
   matplotlibTag,
   numpyTag,
   openCvTag,
@@ -201,6 +221,7 @@ const tags = {
   pillowTag,
   pythonTag,
   scikitLearnTag,
+  streamlitTag,
   tensorFlowTag,
 };
 

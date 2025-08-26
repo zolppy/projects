@@ -7,6 +7,7 @@ import imageDimensionalityReduction from "../../../public/image-dimensionality-r
 import interiorDesign from "../../../public/interior-design.jpg";
 import irisClassifier from "../../../public/iris-classifier.jpg";
 import objectDetectionWithYolo from "../../../public/object-detection-with-yolo.jpg";
+import omnidoc from "../../../public/omnidoc.jpg";
 import pizza from "../../../public/thin-crust-pizza.jpg";
 import project from "../../../public/project-showcase.jpg";
 import recommendationSystem from "../../../public/recommendation-system.jpg";
@@ -50,6 +51,11 @@ const objectDetectionWithYoloImg: Img = {
   title: "",
   alt: "",
 };
+const omnidocImg: Img = {
+  path: omnidoc,
+  title: "",
+  alt: "",
+};
 const pizzaImg: Img = {
   path: pizza,
   title: "",
@@ -86,6 +92,7 @@ export {
   interiorDesignImg,
   irisClassifierImg,
   objectDetectionWithYoloImg,
+  omnidocImg,
   pizzaImg,
   projectShowcaseImg,
   recommendationSystemImg,

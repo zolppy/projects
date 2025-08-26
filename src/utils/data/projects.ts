@@ -228,6 +228,23 @@ const projects: Project[] = [
   },
   {
     id: uuid(),
+    img: images.omnidocImg,
+    title: "OmniDoc",
+    description:
+      "A RAG chatbot built with LangChain, ChromaDB, and LLM of Groq that processes PDF documents for context-aware question answering. Features document ingestion, text splitting, vector storage, and conversational memory with a Streamlit web interface.",
+    areas: [tags.artificialIntelligenceTag],
+    skills: [
+      tags.pythonTag,
+      tags.gitTag,
+      tags.chromaDbTag,
+      tags.githubTag,
+      tags.streamlitTag,
+      tags.langchainTag,
+    ],
+    repoLink: "https://github.com/zolppy/omnidoc",
+  },
+  {
+    id: uuid(),
     img: images.recommendationSystemImg,
     title: "Recommendation System",
     description:
