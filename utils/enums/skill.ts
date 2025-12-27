@@ -1,0 +1,18 @@
+export const enum Skill {
+  REACT = "React.js",
+  NEXT = "Next.js",
+  TAILWIND_CSS = "Tailwind CSS",
+  TYPESCRIPT = "TypeScript",
+  GIT = "Git",
+  DOCKER = "Docker",
+  GITHUB = "Github",
+  FRAMER_MOTION = "Framer Motion",
+  REACT_ICONS = "React Icons",
+  REACT_HOOK_FORM = "React Hook Form",
+  REACT_TESTING_LIBRARY = "React Testing Library",
+  PYTHON = "Python",
+  FASTAPI = "FastAPI",
+  POSTGRESQL = "PosgreSQL",
+  SQLALCHEMY = "SQLAlchemy",
+  PYDANTIC = "Pydantic",
+}
